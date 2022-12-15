@@ -39,7 +39,9 @@ function Game(num) {
             }
             whichPlayer = !whichPlayer;
 
-            if (one == two && one == three && one != "") {
+            
+        }
+        if (one == two && one == three && one != "") {
                 Over(one);
             } else if (four == five && four == six && four != "") {
                 Over(four);
@@ -56,13 +58,13 @@ function Game(num) {
             } else if (three == five && three == seven && three != "") {
                 Over(three);
             }
-        }
     }
-
-
 }
 
 function Over(won) {
     document.getElementById("turn").innerHTML = won + "\t Won the Game";
     document.getElementById("resetBtn").style.visibility = "visible"
+}
+function reset() {
+    window.location.reload();
 }
