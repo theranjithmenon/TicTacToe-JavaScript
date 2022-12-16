@@ -1,8 +1,6 @@
 var whichPlayer = true;
 var count = 0;
 
-
-
 function Game(num) {
 
     var one = document.getElementById(1).value;
